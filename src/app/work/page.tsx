@@ -221,6 +221,62 @@ export default function WorkPage() {
         </div>
       </section>
 
+      {/* Recent Work */}
+      <section className="mb-16">
+        <h2 className="font-serif text-2xl font-bold text-white mb-2">Recent Work</h2>
+        <p className="text-brand-muted text-sm mb-8">
+          A sample of what I build — from production platforms to polished product UIs.
+        </p>
+        <div className="grid gap-6 sm:grid-cols-3">
+          {[
+            {
+              img: '/wanderwise-screenshot.png',
+              alt: 'WanderWise travel planning app — dark navy UI with trip dashboard',
+              title: 'WanderWise',
+              desc: 'Full product redesign — custom design system, interactive maps, itinerary builder.',
+              tag: 'Product Design',
+              link: 'https://wanderwise-at.fly.dev/',
+              linkLabel: 'Live Demo',
+            },
+            {
+              img: '/grafana-portfolio.png',
+              alt: 'Production Grafana dashboard showing real-time IoT sensor telemetry',
+              title: 'Dart Solutions Platform',
+              desc: 'Production IoT platform — real-time sensor data, cost tracking, operational metrics.',
+              tag: 'Production System',
+              link: 'mailto:adam@troxellendeavors.com?subject=Dart%20Solutions%20-%20Details%20Request',
+              linkLabel: 'Request Details',
+            },
+            {
+              img: '/energy-audit-screenshot.png',
+              alt: 'Energy Audit Portal showing completed facility audit report with calculations',
+              title: 'Energy Audit Portal',
+              desc: 'Workflow automation — multi-stage approvals, PDF generation, role-based access.',
+              tag: 'Workflow Tool',
+              link: 'https://github.com/adamtxl/energy-solutions-portal',
+              linkLabel: 'GitHub',
+            },
+          ].map(({ img, alt, title, desc, tag, link, linkLabel }) => (
+            <div key={title} className="rounded-2xl border border-white/10 bg-brand-slate/30 overflow-hidden flex flex-col">
+              <img src={img} alt={alt} className="w-full border-b border-white/10 object-cover object-top h-40" />
+              <div className="p-5 flex flex-col flex-1">
+                <span className="text-xs font-semibold uppercase tracking-wider text-brand-gold mb-1">{tag}</span>
+                <h3 className="font-semibold text-white mb-1">{title}</h3>
+                <p className="text-xs text-brand-muted leading-relaxed flex-1">{desc}</p>
+                <a
+                  href={link}
+                  target={link.startsWith('mailto') ? undefined : '_blank'}
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-1.5 text-xs text-brand-gold hover:underline"
+                >
+                  {linkLabel} <ExternalLink size={11} />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Design Example */}
       <section className="mb-16 rounded-2xl border border-brand-gold/20 bg-brand-slate/20 p-8">
         <div className="text-3xl mb-3">✈️</div>

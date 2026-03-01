@@ -230,6 +230,36 @@ export default function HirePage() {
               response · Multi-tenant data isolation
             </p>
           </div>
+
+          {/* Architecture diagram */}
+          <div className="rounded-2xl border border-white/10 bg-brand-slate/30 p-6">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-brand-gold mb-4">
+              System Architecture
+            </h3>
+            <img
+              src="/DSPflow.png"
+              alt="Dart Solutions Platform architecture diagram showing LoRa sensors, ChirpStack, FastAPI backend, TimescaleDB, and React dashboard"
+              className="w-full rounded-lg border border-white/10"
+            />
+            <p className="mt-2 text-xs text-brand-muted/50 text-center">
+              End-to-end data pipeline: LoRaWAN sensors → ChirpStack → FastAPI → TimescaleDB → React dashboard
+            </p>
+          </div>
+
+          {/* Grafana production dashboard */}
+          <div className="rounded-2xl border border-white/10 bg-brand-slate/30 p-6">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-brand-gold mb-4">
+              Production Monitoring Dashboard
+            </h3>
+            <img
+              src="/grafana-portfolio.png"
+              alt="Production Grafana dashboard showing real-time sensor telemetry, cost tracking, and multi-sensor health monitoring"
+              className="w-full rounded-lg border border-white/10"
+            />
+            <p className="mt-2 text-xs text-brand-muted/50 text-center">
+              Live production dashboard: real-time sensor data, cost tracking, and operational metrics
+            </p>
+          </div>
         </div>
 
         <p className="mt-4 text-xs text-brand-muted/50 italic">
@@ -248,45 +278,59 @@ export default function HirePage() {
       <section className="mb-16">
         <h2 className="font-serif text-2xl font-bold text-white mb-6">Also Worth Knowing</h2>
         <div className="grid gap-4 sm:grid-cols-2">
-          <div className="rounded-2xl border border-white/10 bg-brand-slate/30 p-6">
-            <h3 className="font-semibold text-white mb-2">WanderWise</h3>
-            <p className="text-sm text-brand-muted mb-4 leading-relaxed">
-              A full-featured travel planning platform I built and actively use — complete
-              product overhaul with custom design system, dark navy + gold UI, interactive
-              maps, day-by-day itinerary builder, collaborative trip planning, and packing
-              lists. Built to eventually be a real product.
-            </p>
-            <p className="text-xs text-brand-muted/50 mb-3">
-              React · Redux · Express · Node.js · PostgreSQL
-            </p>
-            <a
-              href="https://wanderwise-at.fly.dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm text-brand-gold hover:underline"
-            >
-              Live Demo <ExternalLink size={13} />
-            </a>
+          <div className="rounded-2xl border border-white/10 bg-brand-slate/30 overflow-hidden">
+            <img
+              src="/wanderwise-screenshot.png"
+              alt="WanderWise travel planning app showing dark navy UI with trip dashboard and interactive map"
+              className="w-full border-b border-white/10"
+            />
+            <div className="p-6">
+              <h3 className="font-semibold text-white mb-2">WanderWise</h3>
+              <p className="text-sm text-brand-muted mb-4 leading-relaxed">
+                A full-featured travel planning platform I built and actively use — complete
+                product overhaul with custom design system, dark navy + gold UI, interactive
+                maps, day-by-day itinerary builder, collaborative trip planning, and packing
+                lists. Built to eventually be a real product.
+              </p>
+              <p className="text-xs text-brand-muted/50 mb-3">
+                React · Redux · Express · Node.js · PostgreSQL
+              </p>
+              <a
+                href="https://wanderwise-at.fly.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm text-brand-gold hover:underline"
+              >
+                Live Demo <ExternalLink size={13} />
+              </a>
+            </div>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-brand-slate/30 p-6">
-            <h3 className="font-semibold text-white mb-2">Energy Audit Portal</h3>
-            <p className="text-sm text-brand-muted mb-4 leading-relaxed">
-              Replaced a manual spreadsheet workflow with a structured multi-stage audit
-              pipeline — role-based access, data validation, automated PDF report
-              generation. Compressed a 2-day process into a real-time workflow.
-            </p>
-            <p className="text-xs text-brand-muted/50 mb-3">
-              React · Redux · Express · Node.js · Material UI
-            </p>
-            <a
-              href="https://github.com/adamtxl/energy-solutions-portal"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm text-brand-gold hover:underline"
-            >
-              GitHub <ExternalLink size={13} />
-            </a>
+          <div className="rounded-2xl border border-white/10 bg-brand-slate/30 overflow-hidden">
+            <img
+              src="/energy-audit-screenshot.png"
+              alt="Energy Audit Portal showing completed facility audit with automated carbon footprint calculations and cost analysis"
+              className="w-full border-b border-white/10"
+            />
+            <div className="p-6">
+              <h3 className="font-semibold text-white mb-2">Energy Audit Portal</h3>
+              <p className="text-sm text-brand-muted mb-4 leading-relaxed">
+                Replaced a manual spreadsheet workflow with a structured multi-stage audit
+                pipeline — role-based access, data validation, automated PDF report
+                generation. Compressed a 2-day process into a real-time workflow.
+              </p>
+              <p className="text-xs text-brand-muted/50 mb-3">
+                React · Redux · Express · Node.js · Material UI
+              </p>
+              <a
+                href="https://github.com/adamtxl/energy-solutions-portal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm text-brand-gold hover:underline"
+              >
+                GitHub <ExternalLink size={13} />
+              </a>
+            </div>
           </div>
         </div>
       </section>
