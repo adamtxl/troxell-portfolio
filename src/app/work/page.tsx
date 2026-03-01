@@ -248,13 +248,13 @@ export default function WorkPage() {
               linkLabel: 'Request Details',
             },
             {
-              img: '/energy-audit-screenshot.png',
-              alt: 'Energy Audit Portal showing completed facility audit report with calculations',
-              title: 'Energy Audit Portal',
-              desc: 'Workflow automation — multi-stage approvals, PDF generation, role-based access.',
-              tag: 'Workflow Tool',
-              link: 'https://github.com/adamtxl/energy-solutions-portal',
-              linkLabel: 'GitHub',
+              img: '/jesse-portfolio.png',
+              alt: 'Jesse Galindo portfolio site — work in progress',
+              title: 'Jesse Galindo Portfolio',
+              desc: 'Custom developer portfolio — modern design, project showcases, built in Next.js.',
+              tag: 'In Progress',
+              link: 'mailto:adam@troxellendeavors.com?subject=Website%20Project%20Inquiry',
+              linkLabel: 'Start a project',
             },
           ].map(({ img, alt, title, desc, tag, link, linkLabel }) => (
             <div key={title} className="rounded-2xl border border-white/10 bg-brand-slate/30 overflow-hidden flex flex-col">
