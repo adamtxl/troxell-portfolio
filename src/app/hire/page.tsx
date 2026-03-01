@@ -58,7 +58,42 @@ export default function HirePage() {
         </div>
       </div>
 
-      {/* What I Bring */}
+      {/* Featured Build — above the fold proof */}
+      <div className="mb-16 rounded-2xl border border-brand-gold/20 bg-gradient-to-br from-brand-slate/60 to-brand-slate/20 p-6">
+        <p className="text-xs font-semibold uppercase tracking-widest text-brand-gold mb-4">
+          Featured Build
+        </p>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+          <div className="flex-1">
+            <h2 className="font-serif text-xl font-bold text-white mb-1">
+              Dart Solutions Platform
+            </h2>
+            <p className="text-sm text-brand-muted mb-4">
+              End-to-end IoT telemetry platform for commercial facilities —
+              designed, built, and operated as sole engineer and CTO.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {[
+                { value: '50+',    label: 'Active sensors' },
+                { value: '<2 min', label: 'Alert latency'  },
+                { value: '99.9%',  label: 'Uptime'         },
+                { value: '2',      label: 'Commercial sites'},
+              ].map(({ value, label }) => (
+                <div key={label} className="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-center">
+                  <div className="font-mono text-sm font-bold text-brand-gold">{value}</div>
+                  <div className="text-xs text-brand-muted/60">{label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <a
+            href="mailto:adam@troxellendeavors.com?subject=Dart%20Solutions%20-%20Details%20Request"
+            className="shrink-0 rounded-full border border-brand-gold px-5 py-2 text-sm font-medium text-brand-gold hover:bg-brand-gold hover:text-brand-navy transition-all"
+          >
+            Request details →
+          </a>
+        </div>
+      </div>
       <section className="mb-16">
         <h2 className="font-serif text-2xl font-bold text-white mb-8">What I Bring</h2>
         <div className="grid gap-6 sm:grid-cols-1">

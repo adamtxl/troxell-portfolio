@@ -1,73 +1,82 @@
 import type { Metadata } from 'next'
-import { ExternalLink, CheckCircle } from 'lucide-react'
+import { ExternalLink, CheckCircle, Plus } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Web Development for Real Estate & Local Business',
   description:
-    'Custom websites for commercial real estate firms and local businesses. Fixed price, you own everything, no monthly platform fees.',
+    'Custom websites for commercial real estate firms and local businesses. You own everything, no monthly platform fees.',
 }
 
 const packages = [
   {
     name: 'Professional Foundation',
-    price: '$5,200',
+    platform: 'WordPress',
     tag: null,
-    best: 'Best for brokers who need a polished presence launched quickly.',
-    timeline: '3–4 weeks',
+    best: 'Best for getting a professional presence launched quickly with full content control.',
+    timeline: '3–4 weeks from content delivery',
     includes: [
       'Home, about, listings showcase, lead capture, contact',
       'CMS — update listings yourself, no developer needed',
       'Mobile-responsive on all devices',
-      'SEO basics, Google Analytics',
+      'SEO basics + Google Analytics',
       'Up to 10 listings loaded at launch',
       '2 rounds of revisions',
+      'Training on how to manage your content',
     ],
-  },
-  {
-    name: 'Lead Engine',
-    price: '$7,800',
-    tag: 'Most Popular',
-    best: 'Best for firms that want inbound leads and SEO momentum.',
-    timeline: '4–5 weeks',
-    includes: [
-      'Everything in Professional Foundation',
+    addons: [
       'Individual listing detail pages',
-      'Listings filtering by type, status, neighborhood',
-      'Enhanced lead funnels (valuation, consultation, inquiry)',
-      'Full SEO launch optimization + Google indexing',
-      'Video embedding, blog/resources section',
-      'Enhanced analytics and conversion tracking',
-      '90-day SEO check-in call',
+      'Listings filtering (by type, status, area)',
+      'Enhanced lead funnels',
+      'Full SEO launch optimization',
+      'Video embedding',
+      'Blog / resources section',
+      '1031 Exchange info page',
+      'Track record / closings section',
     ],
   },
   {
     name: 'Custom Build',
-    price: '$12,000',
-    tag: null,
-    best: 'Best for teams that want a platform-like experience or advanced integrations.',
-    timeline: '6–8 weeks',
+    platform: 'Next.js / React',
+    tag: 'Maximum Performance',
+    best: 'Best for firms that want a fully custom, high-performance site with advanced functionality.',
+    timeline: '5–7 weeks from content delivery',
     includes: [
-      'Everything in Lead Engine',
-      'Fully custom React/Next.js + headless CMS',
+      'Everything in Professional Foundation',
+      'Fully custom design — no templates',
+      'React / Next.js for maximum speed and SEO',
+      'Headless CMS for flexible content management',
+      'Advanced lead funnels and conversion tracking',
       'MLS integration exploration and scoping',
-      'Priority support and faster turnaround',
-      'Quarterly strategy calls for year one',
+      'Priority turnaround on updates',
+      'Quarterly strategy call — first year',
+    ],
+    addons: [
+      'Custom analytics dashboard',
+      'CRM integration',
+      'Advanced search and filtering',
+      'Interactive maps and property visualization',
+      'Multi-agent or team portals',
+      'Ongoing retainer support',
     ],
   },
 ]
 
 const faqs = [
   {
-    q: 'Do I have to pay a monthly fee after launch?',
-    a: 'No platform fees. Your only ongoing cost is hosting — typically $15–50/month depending on your setup, paid directly to the host. Support is available at $150/hr, but you can also manage content yourself via the CMS.',
+    q: 'How does pricing work?',
+    a: "Every project is scoped and priced based on your specific needs. I'll send a clear, fixed-price proposal after our discovery call — no hourly billing surprises. Payment is structured in milestones: deposit to start, midpoint, and launch.",
   },
   {
-    q: 'What if I want to change things after launch?',
-    a: 'Two revision rounds are included during the project. After launch, updates are $150/hr, or you can manage content yourself via the CMS.',
+    q: 'Do I have to pay a monthly fee after launch?',
+    a: 'No platform fees. Your only ongoing cost is hosting — typically $15–50/month depending on your setup, paid directly to the host. Support is available hourly if you need updates, or you can manage content yourself.',
   },
   {
     q: 'How is this different from Wix or those $300/month real estate platforms?',
     a: "Those platforms rent you software — when you stop paying, your site goes dark. What I build is yours: no monthly platform fee, no vendor lock-in, full control. You can take it to any developer, host it anywhere, and it keeps running whether you pay me or not.",
+  },
+  {
+    q: 'Which package is right for me?',
+    a: "If you need to get launched quickly with a professional presence and plan to manage your own content, Professional Foundation is the right starting point. If you want maximum performance, custom design, and advanced functionality, the Custom Build is worth the investment. We can talk through it on a discovery call.",
   },
   {
     q: 'Do you work with businesses outside of real estate?',
@@ -110,28 +119,35 @@ export default function WorkPage() {
         <div className="grid gap-4 sm:grid-cols-2">
           {[
             {
+              icon: '🏢',
               title: 'I know your industry',
-              body: 'Nine years at FBS Systems (Flexmls) supporting hundreds of real estate professionals. I don\'t need a crash course in how your business works.',
+              body: "Nine years at FBS Systems (Flexmls) supporting hundreds of real estate professionals. I don't need a crash course in how your business works.",
             },
             {
+              icon: '🔑',
               title: 'You own what I build',
-              body: 'No monthly platform fees. No vendor lock-in. Ongoing hosting typically runs $15–50/month depending on features — paid directly to the host.',
+              body: 'No monthly platform fees. No vendor lock-in. Ongoing hosting typically runs $15–50/month — paid directly to the host. The site is yours, forever.',
             },
             {
-              title: 'Senior engineering, applied to marketing sites',
-              body: "I've built production systems handling real-time data across commercial facilities. Professional execution, on schedule, with clear communication. No ghosting after deposit.",
+              icon: '⚙️',
+              title: 'Senior engineering applied to marketing sites',
+              body: "I've built production systems handling real-time data across commercial facilities. Professional execution, on schedule, with clear communication.",
             },
             {
+              icon: '📞',
               title: 'One point of contact',
               body: 'You talk to me. I build it. No handoffs to offshore teams or junior developers.',
             },
-          ].map(({ title, body }) => (
+          ].map(({ icon, title, body }) => (
             <div
               key={title}
-              className="rounded-2xl border border-white/10 bg-brand-slate/30 p-6"
+              className="rounded-2xl border border-white/10 bg-brand-slate/30 p-6 flex gap-4"
             >
-              <h3 className="font-semibold text-white mb-2">{title}</h3>
-              <p className="text-sm text-brand-muted leading-relaxed">{body}</p>
+              <span className="text-2xl shrink-0">{icon}</span>
+              <div>
+                <h3 className="font-semibold text-white mb-2">{title}</h3>
+                <p className="text-sm text-brand-muted leading-relaxed">{body}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -142,6 +158,7 @@ export default function WorkPage() {
         <h2 className="font-serif text-2xl font-bold text-white mb-8">What I Build</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-2xl border border-white/10 bg-brand-slate/30 p-6">
+            <div className="text-3xl mb-4">🏙️</div>
             <h3 className="font-semibold text-brand-gold mb-4">Commercial Real Estate</h3>
             <ul className="space-y-2 text-sm text-brand-muted">
               {[
@@ -160,6 +177,7 @@ export default function WorkPage() {
             </ul>
           </div>
           <div className="rounded-2xl border border-white/10 bg-brand-slate/30 p-6">
+            <div className="text-3xl mb-4">🏪</div>
             <h3 className="font-semibold text-brand-gold mb-4">Local Business</h3>
             <ul className="space-y-2 text-sm text-brand-muted">
               {[
@@ -184,15 +202,16 @@ export default function WorkPage() {
         <h2 className="font-serif text-2xl font-bold text-white mb-8">How It Works</h2>
         <div className="space-y-4">
           {[
-            { step: '01', title: 'Discovery call (~30 min)', body: 'We talk about your goals, your clients, and what you need the site to do. No commitment required.' },
-            { step: '02', title: 'Proposal', body: 'You get a clear scope, timeline, and fixed price — no hourly billing surprises.' },
-            { step: '03', title: 'Build', body: 'I deliver a professional site in 3–5 weeks depending on scope. Two revision rounds included. Fast timelines depend on timely feedback and content approval on your end.' },
-            { step: '04', title: 'Launch + handoff', body: 'Full ownership, a training walkthrough, and the ability to manage content yourself. Support available at $150/hr if you ever need it.' },
-          ].map(({ step, title, body }) => (
+            { step: '01', icon: '💬', title: 'Discovery call (~30 min)', body: 'We talk about your goals, your clients, and what you need the site to do. No commitment required.' },
+            { step: '02', icon: '📋', title: 'Proposal', body: 'You get a clear scope, timeline, and fixed price — no hourly billing surprises.' },
+            { step: '03', icon: '🔨', title: 'Build', body: 'I deliver a professional site in 3–7 weeks depending on scope. Two revision rounds included. Fast timelines depend on timely feedback and content approval on your end.' },
+            { step: '04', icon: '🚀', title: 'Launch + handoff', body: 'Full ownership, a training walkthrough, and the ability to manage content yourself. Support available hourly if you ever need it.' },
+          ].map(({ step, icon, title, body }) => (
             <div key={step} className="flex gap-5 rounded-2xl border border-white/10 bg-brand-slate/30 p-6">
-              <span className="font-mono text-2xl font-bold text-brand-gold/30 shrink-0 w-8">
-                {step}
-              </span>
+              <div className="flex flex-col items-center gap-1 shrink-0">
+                <span className="text-2xl">{icon}</span>
+                <span className="font-mono text-xs font-bold text-brand-gold/40">{step}</span>
+              </div>
               <div>
                 <h3 className="font-semibold text-white mb-1">{title}</h3>
                 <p className="text-sm text-brand-muted leading-relaxed">{body}</p>
@@ -204,6 +223,7 @@ export default function WorkPage() {
 
       {/* Design Example */}
       <section className="mb-16 rounded-2xl border border-brand-gold/20 bg-brand-slate/20 p-8">
+        <div className="text-3xl mb-3">✈️</div>
         <p className="text-xs font-semibold uppercase tracking-widest text-brand-gold mb-3">
           A Note on Design
         </p>
@@ -226,9 +246,13 @@ export default function WorkPage() {
 
       {/* Packages */}
       <section className="mb-16">
-        <h2 className="font-serif text-2xl font-bold text-white mb-8">Packages</h2>
-        <div className="grid gap-6 sm:grid-cols-3">
-          {packages.map(({ name, price, tag, best, timeline, includes }) => (
+        <h2 className="font-serif text-2xl font-bold text-white mb-2">Packages</h2>
+        <p className="text-brand-muted mb-8 text-sm">
+          Every project is scoped individually. These packages are starting points —
+          we&apos;ll tailor the scope and price to what you actually need.
+        </p>
+        <div className="grid gap-6 sm:grid-cols-2">
+          {packages.map(({ name, platform, tag, best, timeline, includes, addons }) => (
             <div
               key={name}
               className={`relative flex flex-col rounded-2xl border p-6 ${
@@ -238,18 +262,38 @@ export default function WorkPage() {
               }`}
             >
               {tag && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-gold px-3 py-0.5 text-xs font-bold text-brand-navy">
+                <span className="absolute -top-3 left-6 rounded-full bg-brand-gold px-3 py-0.5 text-xs font-bold text-brand-navy">
                   {tag}
                 </span>
               )}
-              <h3 className="font-serif font-bold text-white">{name}</h3>
-              <p className="mt-1 text-2xl font-bold text-brand-gold">{price}</p>
-              <p className="mt-1 text-xs text-brand-muted/60">{timeline}</p>
-              <p className="mt-3 text-xs text-brand-muted italic">{best}</p>
-              <ul className="mt-4 flex-1 space-y-2">
+              <div className="mb-4">
+                <h3 className="font-serif text-lg font-bold text-white">{name}</h3>
+                <span className="inline-block mt-1 rounded-full border border-white/20 px-2.5 py-0.5 text-xs text-brand-muted">
+                  {platform}
+                </span>
+              </div>
+              <p className="text-xs text-brand-muted italic mb-4">{best}</p>
+              <p className="text-xs text-brand-gold/60 mb-4">⏱ {timeline}</p>
+
+              <h4 className="text-xs font-semibold uppercase tracking-wider text-brand-gold mb-2">
+                Included
+              </h4>
+              <ul className="mb-6 flex-1 space-y-2">
                 {includes.map((item) => (
                   <li key={item} className="flex gap-2 text-xs text-brand-muted">
                     <CheckCircle size={12} className="text-brand-gold mt-0.5 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <h4 className="text-xs font-semibold uppercase tracking-wider text-brand-muted/50 mb-2">
+                Popular Add-ons
+              </h4>
+              <ul className="space-y-1.5">
+                {addons.map((item) => (
+                  <li key={item} className="flex gap-2 text-xs text-brand-muted/50">
+                    <Plus size={11} className="mt-0.5 shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -258,8 +302,7 @@ export default function WorkPage() {
           ))}
         </div>
         <p className="mt-4 text-xs text-brand-muted/50 text-center">
-          All packages: 50% deposit to start · 25% at midpoint · 25% at launch.
-          You own everything at final payment.
+          All projects: fixed price · milestone payments · you own everything at final payment.
         </p>
       </section>
 
@@ -280,6 +323,7 @@ export default function WorkPage() {
 
       {/* CTA */}
       <section className="rounded-2xl border border-brand-gold/30 bg-brand-slate/30 p-8 text-center">
+        <div className="text-4xl mb-4">👋</div>
         <h2 className="font-serif text-2xl font-bold text-white mb-2">Let&apos;s Talk</h2>
         <p className="text-brand-muted mb-6">No pressure, no commitment. Tell me what you&apos;re working on.</p>
         <a

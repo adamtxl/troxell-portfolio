@@ -8,8 +8,8 @@ import { cn } from '@/lib/utils'
 
 const links = [
   { href: '/hire',        label: 'For Employers' },
-  { href: '/work',        label: 'Hire Me'        },
-  { href: '/consulting',  label: 'Consulting'     },
+  { href: '/work',        label: 'For Clients'   },
+  { href: '/consulting',  label: 'Consulting'    },
 ]
 
 export function Nav() {
