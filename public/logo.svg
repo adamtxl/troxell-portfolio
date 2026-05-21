@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="75 260 1360 480">
+  <defs>
+    <linearGradient id="navyFace" x1="90" y1="250" x2="540" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#071A36"/>
+      <stop offset="0.55" stop-color="#0B2A55"/>
+      <stop offset="1" stop-color="#061529"/>
+    </linearGradient>
+    <linearGradient id="navyEdge" x1="180" y1="310" x2="540" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#123E7A"/>
+      <stop offset="1" stop-color="#071731"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="90" y1="340" x2="520" y2="710" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B98714"/>
+      <stop offset="0.20" stop-color="#FFF08B"/>
+      <stop offset="0.42" stop-color="#E7C84D"/>
+      <stop offset="0.68" stop-color="#B8871F"/>
+      <stop offset="1" stop-color="#F3D765"/>
+    </linearGradient>
+    <linearGradient id="goldDark" x1="350" y1="455" x2="470" y2="625" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F5D65F"/>
+      <stop offset="1" stop-color="#9B6C0D"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <style>
+      .wordmark { font-family: 'Montserrat', 'Arial Black', 'Arial', sans-serif; font-weight: 900; letter-spacing: 3px; }
+      .submark { font-family: 'Montserrat', 'Arial', sans-serif; font-weight: 700; letter-spacing: 18px; }
+    </style>
+  </defs>
+
+  <!-- Icon: hexagonal shield -->
+  <g id="TE-icon" filter="url(#softShadow)">
+    <polygon points="304,277 518,382 518,617 305,724 95,615 95,382" fill="url(#navyFace)"/>
+    <polygon points="304,277 518,382 494,407 304,315 127,401 95,382" fill="url(#navyEdge)" opacity="0.72"/>
+    <polygon points="95,382 127,401 127,597 305,688 305,724 95,615" fill="#071733" opacity="0.85"/>
+    <polygon points="518,382 494,407 494,597 305,688 305,724 518,617" fill="#0C244B" opacity="0.85"/>
+    <polygon points="304,315 494,407 494,597 305,688 127,597 127,401" fill="none" stroke="#2B65AE" stroke-width="3" opacity="0.85"/>
+  </g>
+
+  <!-- Gold TE monogram -->
+  <g id="TE-monogram" filter="url(#smallShadow)">
+    <!-- T crossbar with angled ends -->
+    <polygon points="80,375 539,375 512,428 133,428" fill="url(#gold)"/>
+    <polygon points="133,428 512,428 500,442 144,442" fill="#9C711B" opacity="0.85"/>
+    <polygon points="80,375 133,428 144,442 96,394" fill="#D9B846" opacity="0.9"/>
+    <polygon points="539,375 512,428 500,442 552,388" fill="#8D6418" opacity="0.9"/>
+
+    <!-- T vertical stem -->
+    <polygon points="280,425 326,425 326,690 305,719 280,705" fill="url(#gold)"/>
+    <polygon points="326,425 337,414 337,672 326,690" fill="#8D6418" opacity="0.75"/>
+    <polygon points="280,425 292,439 292,713 280,705" fill="#F6DC69" opacity="0.65"/>
+
+    <!-- E top bar -->
+    <polygon points="354,447 461,447 432,494 354,494" fill="url(#goldDark)"/>
+    <polygon points="354,447 366,459 366,504 354,494" fill="#FFF08B" opacity="0.65"/>
+    <polygon points="461,447 432,494 420,505 448,459" fill="#805B12" opacity="0.8"/>
+
+    <!-- E middle bar -->
+    <polygon points="354,525 421,525 397,563 354,563" fill="url(#goldDark)"/>
+    <polygon points="354,525 365,535 365,574 354,563" fill="#FFF08B" opacity="0.55"/>
+
+    <!-- E lower diagonal stroke -->
+    <polygon points="354,563 397,563 354,646" fill="url(#goldDark)"/>
+    <polygon points="354,563 365,574 365,625 354,646" fill="#FFF08B" opacity="0.50"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark">
+    <text x="590" y="520" class="wordmark" font-size="128" fill="#ffffff" textLength="742" lengthAdjust="spacingAndGlyphs">TROXELL</text>
+    <line x1="590" y1="576" x2="722" y2="576" stroke="#B0821B" stroke-width="4"/>
+    <text x="746" y="591" class="submark" font-size="44" fill="#B0821B" textLength="525" lengthAdjust="spacingAndGlyphs">ENDEAVORS</text>
+    <line x1="1306" y1="576" x2="1414" y2="576" stroke="#B0821B" stroke-width="4"/>
+  </g>
+</svg>
