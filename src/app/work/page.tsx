@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import { ExternalLink, CheckCircle, Plus } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Web Development for Real Estate & Local Business',
+  title: 'Adam Troxell — Web Development & Custom Builds',
   description:
-    'Custom websites for commercial real estate firms and local businesses. You own everything, no monthly platform fees.',
+    'Custom websites and web apps for businesses of any size. Fixed-price projects, senior engineering, no agency markup. You own everything.',
 }
 
 const packages = [
@@ -16,7 +16,7 @@ const packages = [
     timeline: '3–4 weeks from content delivery',
     includes: [
       'Home, about, listings showcase, lead capture, contact',
-      'CMS — update listings yourself, no developer needed',
+      'CMS - update listings yourself, no developer needed',
       'Mobile-responsive on all devices',
       'SEO basics + Google Analytics',
       'Up to 10 listings loaded at launch',
@@ -42,13 +42,13 @@ const packages = [
     timeline: '5–7 weeks from content delivery',
     includes: [
       'Everything in Professional Foundation',
-      'Fully custom design — no templates',
+      'Fully custom design - no templates',
       'React / Next.js for maximum speed and SEO',
       'Headless CMS for flexible content management',
       'Advanced lead funnels and conversion tracking',
       'MLS integration exploration and scoping',
       'Priority turnaround on updates',
-      'Quarterly strategy call — first year',
+      'Quarterly strategy call - first year',
     ],
     addons: [
       'Custom analytics dashboard',
@@ -64,15 +64,15 @@ const packages = [
 const faqs = [
   {
     q: 'How does pricing work?',
-    a: "Every project is scoped and priced based on your specific needs. I'll send a clear, fixed-price proposal after our discovery call — no hourly billing surprises. Payment is structured in milestones: deposit to start, midpoint, and launch.",
+    a: "Every project is scoped and priced based on your specific needs. I'll send a clear, fixed-price proposal after our discovery call - no hourly billing surprises. Payment is structured in milestones: deposit to start, midpoint, and launch.",
   },
   {
     q: 'Do I have to pay a monthly fee after launch?',
-    a: 'No platform fees. Your only ongoing cost is hosting — typically $15–50/month depending on your setup, paid directly to the host. Support is available hourly if you need updates, or you can manage content yourself.',
+    a: 'No platform fees. Your only ongoing cost is hosting - typically $15–50/month depending on your setup, paid directly to the host. Support is available hourly if you need updates, or you can manage content yourself.',
   },
   {
     q: 'How is this different from Wix or those $300/month real estate platforms?',
-    a: "Those platforms rent you software — when you stop paying, your site goes dark. What I build is yours: no monthly platform fee, no vendor lock-in, full control. You can take it to any developer, host it anywhere, and it keeps running whether you pay me or not.",
+    a: "Those platforms rent you software - when you stop paying, your site goes dark. What I build is yours: no monthly platform fee, no vendor lock-in, full control. You can take it to any developer, host it anywhere, and it keeps running whether you pay me or not.",
   },
   {
     q: 'Which package is right for me?',
@@ -100,7 +100,7 @@ export default function WorkPage() {
         </h1>
         <p className="mt-5 max-w-2xl text-lg text-brand-muted">
           You shouldn&apos;t have to explain what you do for a living to your web
-          developer. I spent nine years in real estate technology — I understand
+          developer. I spent nine years in real estate technology - I understand
           your business, your clients, and what it actually takes to generate leads
           online. I build sites that convert, rank locally, and make it easy for
           clients to contact you.
@@ -126,7 +126,7 @@ export default function WorkPage() {
             {
               icon: '🔑',
               title: 'You own what I build',
-              body: 'No monthly platform fees. No vendor lock-in. Ongoing hosting typically runs $15–50/month — paid directly to the host. The site is yours, forever.',
+              body: 'No monthly platform fees. No vendor lock-in. Ongoing hosting typically runs $15–50/month - paid directly to the host. The site is yours, forever.',
             },
             {
               icon: '⚙️',
@@ -203,7 +203,7 @@ export default function WorkPage() {
         <div className="space-y-4">
           {[
             { step: '01', icon: '💬', title: 'Discovery call (~30 min)', body: 'We talk about your goals, your clients, and what you need the site to do. No commitment required.' },
-            { step: '02', icon: '📋', title: 'Proposal', body: 'You get a clear scope, timeline, and fixed price — no hourly billing surprises.' },
+            { step: '02', icon: '📋', title: 'Proposal', body: 'You get a clear scope, timeline, and fixed price - no hourly billing surprises.' },
             { step: '03', icon: '🔨', title: 'Build', body: 'I deliver a professional site in 3–7 weeks depending on scope. Two revision rounds included. Fast timelines depend on timely feedback and content approval on your end.' },
             { step: '04', icon: '🚀', title: 'Launch + handoff', body: 'Full ownership, a training walkthrough, and the ability to manage content yourself. Support available hourly if you ever need it.' },
           ].map(({ step, icon, title, body }) => (
@@ -225,7 +225,7 @@ export default function WorkPage() {
       <section className="mb-16">
         <h2 className="font-serif text-2xl font-bold text-white mb-2">Recent Work</h2>
         <p className="text-brand-muted text-sm mb-8">
-          A sample of what I build — from production platforms to polished product UIs.
+          A sample of what I build - from production platforms to polished product UIs.
         </p>
 
         {/* Featured client */}
@@ -233,7 +233,7 @@ export default function WorkPage() {
           <div className="relative">
             <img
               src="/jkmf-hero.png"
-              alt="Los Angeles Apartment Broker homepage hero — JKMF Real Estate"
+              alt="Los Angeles Apartment Broker homepage hero - JKMF Real Estate"
               className="w-full h-64 object-cover object-top"
             />
             <span className="absolute top-3 left-3 rounded-full bg-brand-gold px-3 py-1 text-xs font-bold text-brand-navy">
@@ -270,7 +270,7 @@ export default function WorkPage() {
             <div className="grid grid-cols-2 gap-2">
               <img
                 src="/jkmf-track-record.png"
-                alt="Track record section — live data from Google Sheets"
+                alt="Track record section - live data from Google Sheets"
                 className="rounded-lg border border-white/10 h-28 w-full object-cover object-top"
               />
               <img
@@ -286,9 +286,9 @@ export default function WorkPage() {
           {[
             {
               img: '/wanderwise-screenshot.png',
-              alt: 'WanderWise travel planning app — dark navy UI with trip dashboard',
+              alt: 'WanderWise travel planning app - dark navy UI with trip dashboard',
               title: 'WanderWise',
-              desc: 'Full product redesign — custom design system, interactive maps, itinerary builder.',
+              desc: 'Full product redesign - custom design system, interactive maps, itinerary builder.',
               tag: 'Product Design',
               link: 'https://wanderwise-at.fly.dev/',
               linkLabel: 'Live Demo',
@@ -297,16 +297,16 @@ export default function WorkPage() {
               img: '/grafana-portfolio.png',
               alt: 'Production Grafana dashboard showing real-time IoT sensor telemetry',
               title: 'Dart Solutions Platform',
-              desc: 'Production IoT platform — real-time sensor data, cost tracking, operational metrics.',
+              desc: 'Production IoT platform - real-time sensor data, cost tracking, operational metrics.',
               tag: 'Production System',
               link: 'mailto:adam@troxellendeavors.com?subject=Dart%20Solutions%20-%20Details%20Request',
               linkLabel: 'Request Details',
             },
             {
               img: '/jesse-portfolio.png',
-              alt: 'Jesse Galindo portfolio site — work in progress',
+              alt: 'Jesse Galindo portfolio site - work in progress',
               title: 'Jesse Galindo Portfolio',
-              desc: 'Custom developer portfolio — modern design, project showcases, built in Next.js.',
+              desc: 'Custom developer portfolio - modern design, project showcases, built in Next.js.',
               tag: 'In Progress',
               link: 'mailto:adam@troxellendeavors.com?subject=Website%20Project%20Inquiry',
               linkLabel: 'Start a project',
@@ -339,7 +339,7 @@ export default function WorkPage() {
           A Note on Design
         </p>
         <p className="text-brand-muted leading-relaxed mb-4">
-          Want to see what my work looks like? Check out WanderWise — a travel
+          Want to see what my work looks like? Check out WanderWise - a travel
           planning app I built and redesigned from scratch. Dark navy, gold serif
           typography, interactive maps, card-based layout. It went from looking
           like a student project to something you&apos;d pay for. That same
@@ -359,7 +359,7 @@ export default function WorkPage() {
       <section className="mb-16">
         <h2 className="font-serif text-2xl font-bold text-white mb-2">Packages</h2>
         <p className="text-brand-muted mb-8 text-sm">
-          Every project is scoped individually. These packages are starting points —
+          Every project is scoped individually. These packages are starting points -
           we&apos;ll tailor the scope and price to what you actually need.
         </p>
         <div className="grid gap-6 sm:grid-cols-2">
