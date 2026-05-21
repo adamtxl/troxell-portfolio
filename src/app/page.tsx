@@ -5,13 +5,13 @@ import { ArrowRight, Code2, Building2, Cpu } from 'lucide-react';
 export const metadata: Metadata = {
 	title: 'Adam Troxell — Full-Stack Engineer',
 	description:
-		'Full-stack engineer and hands-on former CTO. 9 years in real estate tech. Built a production IoT platform from zero.',
+		'Full-stack engineer and hands-on former CTO. Custom websites and web apps for businesses of any size. Direct execution, no agency bloat.',
 };
 
 const stats = [
 	{ icon: Code2, value: '9+', label: 'Years in Tech' },
 	{ icon: Cpu, value: '50+', label: 'Production Sensors' },
-	{ icon: Building2, value: '2', label: 'Commercial Sites' },
+	{ icon: Building2, value: '8+', label: 'Projects Shipped' },
 ];
 
 export default function HomePage() {
@@ -48,7 +48,7 @@ export default function HomePage() {
 				</h1>
 
 				<p className='mt-6 text-lg text-brand-muted sm:text-xl max-w-2xl mx-auto'>
-					From commercial real estate websites to IoT dashboards, I turn business context into production-ready
+					From commercial real estate websites to businesses of any size, I turn business context into production-ready
 					software. Direct execution, no agency bloat, no handoffs.
 				</p>
 
