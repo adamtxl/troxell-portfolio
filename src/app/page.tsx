@@ -114,7 +114,7 @@ export default function HomePage() {
 					</blockquote>
 					<figcaption className='mt-4 flex items-center gap-3'>
 						<div className='h-px flex-1 bg-white/10' />
-						<span className='text-sm font-semibold text-white/70'>Client — Jesse&rsquo;s Portfolio Website</span>
+						<span className='text-sm font-semibold text-white/70'>Maxwell Forester — losangelesapartmentbroker.com</span>
 					</figcaption>
 				</figure>
 			</div>
