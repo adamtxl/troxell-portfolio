@@ -21,11 +21,12 @@ export function Nav() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
 
         {/* Logo */}
-        <Link
-          href="/"
-          className="font-serif text-lg font-bold tracking-tight text-white hover:text-brand-gold transition-colors"
-        >
-          Adam Troxell
+        <Link href="/" className="flex items-center">
+          <img
+            src="/icon.svg"
+            alt="Troxell Endeavors"
+            style={{ height: '40px', width: '40px' }}
+          />
         </Link>
 
         {/* Desktop nav */}

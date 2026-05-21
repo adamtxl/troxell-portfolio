@@ -227,6 +227,61 @@ export default function WorkPage() {
         <p className="text-brand-muted text-sm mb-8">
           A sample of what I build — from production platforms to polished product UIs.
         </p>
+
+        {/* Featured client */}
+        <div className="mb-8 rounded-2xl border border-brand-gold/30 bg-brand-slate/30 overflow-hidden">
+          <div className="relative">
+            <img
+              src="/jkmf-hero.png"
+              alt="Los Angeles Apartment Broker homepage hero — JKMF Real Estate"
+              className="w-full h-64 object-cover object-top"
+            />
+            <span className="absolute top-3 left-3 rounded-full bg-brand-gold px-3 py-1 text-xs font-bold text-brand-navy">
+              Featured Client
+            </span>
+          </div>
+          <div className="p-6">
+            <div className="flex items-start justify-between gap-4 mb-3">
+              <div>
+                <h3 className="font-semibold text-white text-lg">Los Angeles Apartment Broker</h3>
+                <p className="text-xs text-brand-muted mt-0.5">John Katnik &amp; Maxwell Forester · BRC Advisors</p>
+              </div>
+              <a
+                href="https://losangelesapartmentbroker.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 inline-flex items-center gap-1 text-xs text-brand-gold hover:underline"
+              >
+                View Live <ExternalLink size={11} />
+              </a>
+            </div>
+            <p className="text-sm text-brand-muted leading-relaxed mb-4">
+              Full marketing site for a multifamily investment brokerage in LA. Custom WordPress build with a live
+              track record section that pulls from Google Sheets with localStorage caching, SureForms + Brevo SMTP
+              lead capture, GA4 + Search Console, and CRE-specific branding throughout.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {['WordPress', 'Google Sheets Integration', 'SEO', 'Lead Capture', 'Commercial Real Estate'].map((tag) => (
+                <span key={tag} className="rounded-full border border-white/10 px-2.5 py-0.5 text-xs text-brand-muted">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <img
+                src="/jkmf-track-record.png"
+                alt="Track record section — live data from Google Sheets"
+                className="rounded-lg border border-white/10 h-28 w-full object-cover object-top"
+              />
+              <img
+                src="/jkmf-contact.png"
+                alt="Contact page with Maxwell Forester and John Katnik team info"
+                className="rounded-lg border border-white/10 h-28 w-full object-cover object-top"
+              />
+            </div>
+          </div>
+        </div>
+
         <div className="grid gap-6 sm:grid-cols-3">
           {[
             {

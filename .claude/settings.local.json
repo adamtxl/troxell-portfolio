@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls ~/Desktop/ | grep -i \"los\\\\|jkmf\\\\|apart\\\\|broker\\\\|screen\\\\|shot\" 2>/dev/null || ls ~/Desktop/*.png ~/Desktop/*.jpg 2>/dev/null | head -20)",
+      "Read(//Users/adamtroxell/Desktop/**)",
+      "Bash(sips -g pixelWidth -g pixelHeight ~/Desktop/JKMF-Home/home-hero.png ~/Desktop/JKMF-record/track-record-listings.png ~/Desktop/JKMF-contact/contact-bottom.png)",
+      "Bash(sips -z 889 1600 ~/Desktop/JKMF-Home/home-hero.png --out /Users/adamtroxell/solo-projects-and-learning/troxell-portfolio/public/jkmf-hero.png)",
+      "Bash(sips -z 960 1600 ~/Desktop/JKMF-record/track-record-listings.png --out /Users/adamtroxell/solo-projects-and-learning/troxell-portfolio/public/jkmf-track-record.png)",
+      "Bash(sips -z 714 1600 ~/Desktop/JKMF-contact/contact-bottom.png --out /Users/adamtroxell/solo-projects-and-learning/troxell-portfolio/public/jkmf-contact.png)"
+    ]
+  }
+}
