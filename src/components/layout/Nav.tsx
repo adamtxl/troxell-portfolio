@@ -23,10 +23,9 @@ export function Nav() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img
-            src="/logo.svg"
+            src="/icon.svg"
             alt="Troxell Endeavors"
-            height={36}
-            style={{ height: '36px', width: 'auto' }}
+            style={{ height: '40px', width: '40px' }}
           />
         </Link>
 
