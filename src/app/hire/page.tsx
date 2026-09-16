@@ -2,9 +2,17 @@ import type { Metadata } from 'next'
 import { Download, Mail, Linkedin, Github, ExternalLink } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Hire Adam Troxell — Senior Full-Stack Engineer',
+  title: 'Hire Me: Senior Full-Stack Engineer',
   description:
     'Full-stack engineer and hands-on former CTO open to senior roles. IoT platforms, React, FastAPI, PostgreSQL, TypeScript.',
+  alternates: {
+    canonical: '/hire',
+  },
+  openGraph: {
+    type: 'website',
+    url: '/hire',
+    siteName: 'Adam Troxell',
+  },
 }
 
 export default function HirePage() {

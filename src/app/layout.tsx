@@ -20,15 +20,18 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Adam Troxell — Full-Stack Engineer',
+    default: 'Adam Troxell | Full-Stack Engineer',
     template: '%s | Adam Troxell',
   },
   description:
     'Full-stack engineer and hands-on former CTO. I build production systems across web, data, and IoT.',
   metadataBase: new URL('https://troxellendeavors.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
-    url: 'https://troxellendeavors.com',
+    url: '/',
     siteName: 'Adam Troxell',
   },
 }
