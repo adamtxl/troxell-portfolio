@@ -302,7 +302,7 @@ export default function ConsultingPage() {
                 closing is as easy as adding a row.
               </p>
               <a
-                href="https://losangelesapartmentbroker.com"
+                href="https://losangelesapartmentbroker.com/track-record/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-xs text-brand-gold hover:underline"
