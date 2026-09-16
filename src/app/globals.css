@@ -27,3 +27,13 @@
     text-wrap: balance;
   }
 }
+
+@media print {
+  header {
+    position: static;
+  }
+
+  body {
+    min-height: 0;
+  }
+}
