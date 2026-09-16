@@ -304,8 +304,8 @@ export default function WorkPage() {
             },
             {
               img: '/jesse-portfolio.png',
-              alt: 'Jesse Galindo portfolio site - work in progress',
-              title: 'Jesse Galindo Portfolio',
+              alt: 'Jesse Harlow portfolio site - work in progress',
+              title: 'Jesse Harlow Portfolio',
               desc: 'Custom developer portfolio - modern design, project showcases, built in Next.js.',
               tag: 'In Progress',
               link: 'mailto:adam@troxellendeavors.com?subject=Website%20Project%20Inquiry',
