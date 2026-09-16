@@ -2,9 +2,17 @@ import type { Metadata } from 'next'
 import { ExternalLink, CheckCircle, Plus } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Adam Troxell — Web Development & Custom Builds',
+  title: 'Web Development & Custom Builds',
   description:
-    'Custom websites and web apps for businesses of any size. Fixed-price projects, senior engineering, no agency markup. You own everything.',
+    'Custom websites and web apps for businesses of any size. Fixed-price projects, production-grade engineering, no agency markup. You own everything.',
+  alternates: {
+    canonical: '/work',
+  },
+  openGraph: {
+    type: 'website',
+    url: '/work',
+    siteName: 'Adam Troxell',
+  },
 }
 
 const packages = [
@@ -130,7 +138,7 @@ export default function WorkPage() {
             },
             {
               icon: '⚙️',
-              title: 'Senior engineering applied to marketing sites',
+              title: 'Production engineering applied to marketing sites',
               body: "I've built production systems handling real-time data across commercial facilities. Professional execution, on schedule, with clear communication.",
             },
             {

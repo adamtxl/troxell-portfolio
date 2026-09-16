@@ -3,9 +3,17 @@ import Link from 'next/link';
 import { ArrowRight, Code2, Building2, Cpu } from 'lucide-react';
 
 export const metadata: Metadata = {
-	title: 'Adam Troxell — Full-Stack Engineer',
+	title: 'Adam Troxell | Full-Stack Engineer',
 	description:
 		'Full-stack engineer and hands-on former CTO. Custom websites and web apps for businesses of any size. Direct execution, no agency bloat.',
+	alternates: {
+		canonical: '/',
+	},
+	openGraph: {
+		type: 'website',
+		url: '/',
+		siteName: 'Adam Troxell',
+	},
 };
 
 const stats = [
