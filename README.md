@@ -32,6 +32,20 @@ Open [http://localhost:3000](http://localhost:3000).
 
 Push to `main` → Vercel auto-deploys. That's it.
 
+## QR Redirects
+
+Printed QR codes point at `https://troxellendeavors.com/go/<slug>`, which
+302-redirects to the destination in [`src/lib/qr-links.json`](src/lib/qr-links.json).
+Change a destination there and deploy — no reprinting. Unknown slugs go to `/`.
+
+Generate print-ready SVGs into `qr-codes/<slug>.svg` (only needed for new slugs):
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r scripts/requirements.txt
+python3 scripts/generate-qr.py
+```
+
 ## Brand Tokens
 
 All colors live in `tailwind.config.ts` under `theme.extend.colors.brand`.
