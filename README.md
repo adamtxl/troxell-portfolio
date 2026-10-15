@@ -34,7 +34,7 @@ Push to `main` → Vercel auto-deploys. That's it.
 
 ## QR Redirects
 
-Printed QR codes point at `https://troxellendeavors.com/go/<slug>`, which
+Printed QR codes point at `https://www.troxellendeavors.com/go/<slug>`, which
 302-redirects to the destination in [`src/lib/qr-links.json`](src/lib/qr-links.json).
 Change a destination there and deploy — no reprinting. Unknown slugs go to `/`.
 

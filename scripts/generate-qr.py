@@ -1,6 +1,6 @@
 """Generate print-ready QR code SVGs for every slug in src/lib/qr-links.json.
 
-Each code encodes https://troxellendeavors.com/go/<slug> (never the final
+Each code encodes https://www.troxellendeavors.com/go/<slug> (never the final
 destination), so destinations can change without reprinting.
 
 Usage: python3 scripts/generate-qr.py
@@ -11,7 +11,7 @@ from pathlib import Path
 
 import segno
 
-BASE_URL = "https://troxellendeavors.com/go"
+BASE_URL = "https://www.troxellendeavors.com/go"
 ROOT = Path(__file__).resolve().parent.parent
 LINKS_FILE = ROOT / "src" / "lib" / "qr-links.json"
 OUT_DIR = ROOT / "qr-codes"
